@@ -20,13 +20,7 @@ export default function Portfolio() {
                             <p>Gestão de Tráfego</p>
                         </div>
                     </article>
-                    <article className="project-card">
-                        <div className="project-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1493421419110-74f4eee564c8?q=80&w=2073&auto=format&fit=crop')" }}></div>
-                        <div className="project-overlay">
-                            <h3>Lumina Decor</h3>
-                            <p>E-commerce & Social</p>
-                        </div>
-                    </article>
+
                 </div>
             </div>
         </section>

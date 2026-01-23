@@ -11,8 +11,8 @@
   --primary-accent: #0052FF;
   --primary-accent-hover: #003ECC;
   --gradient-main: linear-gradient(135deg, #0052FF 0%, #002980 100%);
-  --font-heading: var(--font-playfair-display);
-  --font-body: var(--font-outfit);
+  --font-heading: var(--font-space-grotesk);
+  --font-body: var(--font-inter);
   --transition-fast: 0.3s ease;
 }
 
@@ -119,8 +119,8 @@ body:hover .cursor-outline {
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-family: var(--font-outfit);
+
   font-weight: 700;
 }
 
@@ -180,9 +180,9 @@ body:hover .cursor-outline {
 .hero {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
-  padding-top: 80px;
+  padding-top: 130px;
   overflow: hidden;
 }
 
@@ -541,4 +541,20 @@ body:hover .cursor-outline {
     width: 120px;
     height: 120px;
   }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }

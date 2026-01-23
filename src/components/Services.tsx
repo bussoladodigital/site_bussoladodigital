@@ -1,4 +1,7 @@
+
 import TiltCard from './TiltCard';
+import { servicesData } from '@/data/services';
+import Link from 'next/link';
 
 export default function Services() {
     return (
@@ -8,27 +11,21 @@ export default function Services() {
                     <h2 className="section-title">Nossas Soluções</h2>
                     <p className="section-desc">Estratégias sob medida para cada etapa do seu crescimento.</p>
                 </div>
-                <div className="services-grid">
-                    <TiltCard className="service-card">
-                        <div className="service-icon"><i className="fa-solid fa-chart-line"></i></div>
-                        <h3>Performance & Ads</h3>
-                        <p>Gestão de tráfego focada em ROI. Google Ads, Meta Ads e LinkedIn Ads.</p>
-                    </TiltCard>
-                    <TiltCard className="service-card">
-                        <div className="service-icon"><i className="fa-solid fa-layer-group"></i></div>
-                        <h3>Branding & Design</h3>
-                        <p>Criação de marcas memoráveis e identidades visuais que comunicam valor.</p>
-                    </TiltCard>
-                    <TiltCard className="service-card">
-                        <div className="service-icon"><i className="fa-solid fa-share-nodes"></i></div>
-                        <h3>Social Media</h3>
-                        <p>Estratégia de conteúdo e gestão de comunidades para engajamento real.</p>
-                    </TiltCard>
-                    <TiltCard className="service-card">
-                        <div className="service-icon"><i className="fa-solid fa-code"></i></div>
-                        <h3>Web Development</h3>
-                        <p>Sites institucionais e LPs de alta conversão, rápidos e otimizados.</p>
-                    </TiltCard>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+                    {servicesData.map((service) => (
+                        <Link key={service.id} href={`/servicos/${service.slug}`} className="contents">
+                            <TiltCard className="service-card cursor-pointer group h-full">
+                                <div className="service-icon transition-colors group-hover:text-white">
+                                    <i className={`fa-solid ${service.icon}`}></i>
+                                </div>
+                                <h3 className="group-hover:text-[var(--primary-accent)] transition-colors">{service.title}</h3>
+                                <p>{service.shortDescription}</p>
+                                <span className="inline-block mt-4 text-sm font-bold text-[var(--primary-accent)] group-hover:translate-x-2 transition-transform">
+                                    Saiba mais <i className="fa-solid fa-arrow-right ml-1"></i>
+                                </span>
+                            </TiltCard>
+                        </Link>
+                    ))}
                 </div>
             </div>
         </section>

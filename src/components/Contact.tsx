@@ -11,6 +11,10 @@ export default function Contact() {
                             <i className="fa-solid fa-envelope" style={{ color: 'var(--primary-accent)' }}></i>
                             <span>hello@bussoladodigital.com</span>
                         </div>
+                        <div className="info-item" style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '1rem' }}>
+                            <i className="fa-brands fa-instagram" style={{ color: 'var(--primary-accent)' }}></i>
+                            <a href="https://instagram.com/bussola.dgt" target="_blank" rel="noopener noreferrer">@bussola.dgt</a>
+                        </div>
                     </div>
                     <form className="contact-form">
                         <div className="form-group" style={{ marginBottom: '1rem' }}>
