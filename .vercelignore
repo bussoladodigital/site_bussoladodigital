@@ -1,7 +1,0 @@
-# Ignore files that don't need to be deployed
-.git
-.gitignore
-README.md
-node_modules
-.next
-.env*.local
