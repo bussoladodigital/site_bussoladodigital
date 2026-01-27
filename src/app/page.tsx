@@ -4,6 +4,9 @@ import Portfolio from '@/components/Portfolio';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
 
+export const dynamic = 'force-static';
+export const revalidate = 3600;
+
 export default function Home() {
   return (
     <main>
