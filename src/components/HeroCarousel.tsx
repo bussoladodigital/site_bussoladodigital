@@ -162,29 +162,17 @@ export default function HeroCarousel() {
                             rounded-2xl overflow-hidden
                             flex flex-col justify-end
                             cursor-pointer group
+                            -ml-[120px] -mt-[170px]
+                            md:-ml-[160px] md:-mt-[220px]
+                            lg:-ml-[190px]
                         `}
                         style={{
                             ...style,
                             boxShadow: '0 25px 50px -12px rgba(0,0,0,0.5)',
                             left: '50%',
                             top: '50%',
-                            marginLeft: '-120px', // -240/2
-                            marginTop: '-170px'   // -340/2
                         }}
                     >
-                        <style jsx>{`
-                            @media (min-width: 768px) {
-                                div { 
-                                    marginLeft: -160px !important; /* -320/2 */
-                                    marginTop: -220px !important;  /* -440/2 */
-                                } 
-                            }
-                            @media (min-width: 1024px) {
-                                div { 
-                                    marginLeft: -190px !important; /* -380/2 */
-                                } 
-                            }
-                         `}</style>
 
                         <div className="absolute inset-0 z-0">
                             <img
