@@ -1,7 +1,20 @@
+import Hero from '@/components/Hero';
+import Services from '@/components/Services';
+import Portfolio from '@/components/Portfolio';
+import About from '@/components/About';
+import Contact from '@/components/Contact';
+
+export const dynamic = 'force-static';
+export const revalidate = 3600;
+
 export default function Home() {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', background: '#000', color: '#fff' }}>
-      <h1>Bússola do Digital - Teste Mínimo</h1>
-    </div>
+    <main>
+      <Hero />
+      <Services />
+      <Portfolio />
+      <About />
+      <Contact />
+    </main>
   );
 }
