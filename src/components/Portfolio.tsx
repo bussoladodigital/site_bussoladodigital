@@ -3,7 +3,7 @@ export default function Portfolio() {
         <section id="portfolio" className="portfolio section-padding">
             <div className="container">
                 <div className="section-header">
-                    <h2 className="section-title">Cases Recentes</h2>
+                    <h2 className="section-title">Casos Recentes</h2>
                 </div>
                 <div className="portfolio-grid">
                     <article className="project-card">
