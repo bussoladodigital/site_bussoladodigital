@@ -56,7 +56,7 @@ export default function Contact() {
                         </div>
                         <div className="info-item" style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '1rem' }}>
                             <i className="fa-brands fa-whatsapp" style={{ color: 'var(--primary-accent)' }}></i>
-                            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">(11) 99999-9999</a>
+                            <a href="https://wa.me/5511970718438" target="_blank" rel="noopener noreferrer">(11) 97071-8438</a>
                         </div>
                     </div>
                     <form className="contact-form" onSubmit={handleSubmit}>

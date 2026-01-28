@@ -10,6 +10,35 @@ export async function generateStaticParams() {
     }));
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    const service = servicesData.find((s) => s.slug === slug);
+
+    if (!service) {
+        return {
+            title: 'Serviço não encontrado | Bússola do Digital',
+        };
+    }
+
+    return {
+        title: `${service.title} | Bússola do Digital`,
+        description: service.shortDescription,
+        keywords: service.keywords,
+        openGraph: {
+            title: `${service.title} | Bússola do Digital`,
+            description: service.shortDescription,
+            images: [
+                {
+                    url: service.image,
+                    width: 1200,
+                    height: 630,
+                    alt: service.title,
+                },
+            ],
+        },
+    };
+}
+
 export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
     const service = servicesData.find((s) => s.slug === slug);

@@ -7,6 +7,7 @@ export interface ServiceData {
     fullDescription: string;
     icon: string;
     image: string;
+    keywords: string[];
     features: string[];
     benefits: string[];
     process: { title: string; desc: string }[];
@@ -21,6 +22,16 @@ export const servicesData: ServiceData[] = [
         fullDescription: "Não gastamos seu dinheiro, nós o multiplicamos. Nossa gestão de tráfego é baseada em ciência de dados, testes A/B contínuos e otimização obsessiva. Transformamos cliques em clientes e investimento em lucro líquido. Seja no Google, Meta, LinkedIn ou TikTok, sua marca aparecerá para a pessoa certa, no momento exato de compra.",
         icon: "fa-chart-line",
         image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+        keywords: [
+            "Gestão de Tráfego Pago",
+            "Google Ads",
+            "Facebook Ads",
+            "Instagram Ads",
+            "Agência de Performance",
+            "Tráfego para E-commerce",
+            "Link Patrocinado",
+            "ROI Marketing"
+        ],
         features: [
             "Gestão de Google Ads (Search, Display, Shopping)",
             "Campanhas de Meta Ads (Facebook & Instagram)",
@@ -49,6 +60,15 @@ export const servicesData: ServiceData[] = [
         fullDescription: "Sua marca é o ativo mais valioso da sua empresa. Mais do que um logotipo bonito, construímos ecossistemas visuais que comunicam autoridade, confiança e valor. Do conceito primal à aplicação final, garantimos que sua empresa seja percebida como líder de mercado antes mesmo do cliente ler uma palavra.",
         icon: "fa-layer-group",
         image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2000&auto=format&fit=crop",
+        keywords: [
+            "Identidade Visual",
+            "Criação de Logotipo",
+            "Branding Estratégico",
+            "Rebranding de Marca",
+            "Design Gráfico Corporativo",
+            "Manual da Marca (Brandbook)",
+            "Posicionamento de Marca"
+        ],
         features: [
             "Criação de Naming e Slogan",
             "Identidade Visual Completa (Logo, Cores, Tipografia)",
@@ -77,6 +97,15 @@ export const servicesData: ServiceData[] = [
         fullDescription: "As redes sociais são o SAC, a vitrine e a sala de estar da sua empresa. Não fazemos apenas 'posts', criamos narrativas que engajam e vendem. Nossa estratégia une conteúdo relevante, estética impecável e copy persuasiva para transformar seguidores passivos em defensores ativos da sua marca.",
         icon: "fa-share-nodes",
         image: "/social-media-3d.png",
+        keywords: [
+            "Gestão de Redes Sociais",
+            "Marketing de Conteúdo",
+            "Gestão de Instagram",
+            "Social Media Marketing",
+            "Criação de Conteúdo Digital",
+            "Engajamento de Marca",
+            "Estratégia para Redes Sociais"
+        ],
         features: [
             "Planejamento Estratégico de Conteúdo",
             "Criação de Reels, Stories e Carrosséis",
@@ -105,6 +134,15 @@ export const servicesData: ServiceData[] = [
         fullDescription: "Seu site é seu vendedor 24h. Se ele é lento, feio ou confuso, você está perdendo dinheiro. Desenvolvemos sites de alta performance, Landing Pages focadas em conversão e sistemas web robustos. Utilizamos as tecnologias mais modernas (Next.js, React) para garantir velocidade instantânea e SEO técnico impecável.",
         icon: "fa-code",
         image: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=2064&auto=format&fit=crop",
+        keywords: [
+            "Criação de Sites Profissionais",
+            "Desenvolvimento Web",
+            "Landing Page de Alta Conversão",
+            "Criação de E-commerce",
+            "Site em Next.js",
+            "Programação Front-end",
+            "Otimização de Sites (SEO)"
+        ],
         features: [
             "Sites Institucionais Responsivos",
             "Landing Pages de Alta Conversão",
@@ -133,6 +171,15 @@ export const servicesData: ServiceData[] = [
         fullDescription: "No mundo digital, o tangível se torna premium. A experiência tátil de um cartão de visita com verniz localizado, uma embalagem bem construída ou um catálogo de luxo cria uma memória sensorial duradoura. Cuidamos de tudo: do design criativo à finalização do arquivo para impressão perfeita.",
         icon: "fa-print",
         image: "/print-service.png",
+        keywords: [
+            "Design de Embalagens",
+            "Material Gráfico",
+            "Cartão de Visita Premium",
+            "Design de Catálogos",
+            "Papelaria Corporativa",
+            "Design Impresso",
+            "Identidade Visual Offline"
+        ],
         features: [
             "Cartões de Visita Premium",
             "Folders, Catálogos e Brochuras",
@@ -161,6 +208,15 @@ export const servicesData: ServiceData[] = [
         fullDescription: "Dados sem análise são apenas números. Transformamos terabytes de informações em insights acionáveis para o seu negócio. Implementamos dashboards de Business Intelligence, configuramos rastreamento avançado e ajudamos você a entender exatamente onde está cada centavo do seu investimento e para onde sua empresa deve ir.",
         icon: "fa-magnifying-glass-chart",
         image: "/business-analytics.png",
+        keywords: [
+            "Business Intelligence (BI)",
+            "Análise de Dados Empresariais",
+            "Consultoria em Power BI",
+            "Dashboard de Gestão",
+            "Google Analytics 4 (GA4)",
+            "Ciência de Dados para Negócios",
+            "Métricas de Performance"
+        ],
         features: [
             "Dashboards de B.I. (Power BI / Looker)",
             "Auditoria de Dados e Rastreamento",
