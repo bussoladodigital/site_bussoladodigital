@@ -41,12 +41,11 @@ export const metadata: Metadata = {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
-  verification: {
-    google: "G-XXXXXXXXXX",
-  }
 };
 
 import WhatsAppButton from '@/components/WhatsAppButton';
+
+const GA_ID = 'G-6YNVH7TT4P';
 
 export default function RootLayout({
   children,
@@ -59,9 +58,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
       </head>
       <body>
-        {process.env.NEXT_PUBLIC_GA_ID && (
-          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
-        )}
+        <GoogleAnalytics gaId={GA_ID} />
         <CustomCursor />
 
         <Header />
