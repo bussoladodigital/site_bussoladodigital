@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Bússola do Digital | Marketing Estratégico',
     description: 'Transformamos dados em resultados. Conheça nossas soluções de Performance, Branding e Tecnologia.',
-    url: 'https://bussoladodigital.vercel.app',
+    url: 'https://bussoladodigital.com.br',
     siteName: 'Bússola do Digital',
     locale: 'pt_BR',
     type: 'website',

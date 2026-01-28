@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://bussoladodigital.vercel.app/sitemap.xml',
+        sitemap: 'https://bussoladodigital.com.br/sitemap.xml',
     };
 }

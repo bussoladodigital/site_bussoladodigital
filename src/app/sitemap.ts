@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { servicesData } from '@/data/services';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://bussoladodigital.vercel.app';
+    const baseUrl = 'https://bussoladodigital.com.br';
 
     // Static pages
     const routes = [
