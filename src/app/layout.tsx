@@ -26,12 +26,12 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: 'Bússola do Digital | Marketing Estratégico & Performance',
-  description: 'Agência de marketing focada em direcionar seu negócio para o sucesso digital. Performance, Branding, Social Media, Web Development e Business Analytics.',
-  keywords: ['Marketing Digital', 'Tráfego Pago', 'Branding', 'Social Media', 'Web Development', 'Business Analytics', 'Agência de Marketing'],
+  description: 'Marketing estratégico, gestão de redes sociais, tráfego pago, design e desenvolvimento de sites, aplicativos e sistemas sob medida para o seu negócio.',
+  keywords: ['Marketing Digital', 'Tráfego Pago', 'Branding', 'Social Media', 'Sites', 'Sistemas Sob Medida', 'Aplicativos Personalizados', 'Business Analytics', 'Agência de Marketing'],
   authors: [{ name: 'Bússola do Digital' }],
   openGraph: {
     title: 'Bússola do Digital | Marketing Estratégico',
-    description: 'Transformamos dados em resultados. Conheça nossas soluções de Performance, Branding e Tecnologia.',
+    description: 'Marketing estratégico e tecnologia para seu negócio: redes sociais, tráfego pago, design, sites, aplicativos e sistemas sob medida.',
     url: 'https://bussoladodigital.com.br',
     siteName: 'Bússola do Digital',
     locale: 'pt_BR',

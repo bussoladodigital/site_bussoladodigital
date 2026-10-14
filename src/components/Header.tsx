@@ -23,7 +23,33 @@ export default function Header() {
         setServicesDropdownOpen(false);
     };
 
+    useEffect(() => {
+        if (!mobileMenuOpen) return;
+        const previousOverflow = document.body.style.overflow;
+        document.body.style.overflow = 'hidden';
+        const handleKeyDown = (event: KeyboardEvent) => {
+            if (event.key === 'Escape') {
+                setMobileMenuOpen(false);
+                setServicesDropdownOpen(false);
+            }
+        };
+        const handleResize = () => {
+            if (window.innerWidth >= 1024) {
+                setMobileMenuOpen(false);
+                setServicesDropdownOpen(false);
+            }
+        };
+        window.addEventListener('keydown', handleKeyDown);
+        window.addEventListener('resize', handleResize);
+        return () => {
+            document.body.style.overflow = previousOverflow;
+            window.removeEventListener('keydown', handleKeyDown);
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [mobileMenuOpen]);
+
     return (
+        <>
         <header className={`header ${scrolled ? 'scrolled' : ''}`}>
             <div className="container header-container">
                 <Link href="/" className="logo-container text-lg md:text-2xl" onClick={closeMenu}>
@@ -32,7 +58,7 @@ export default function Header() {
                 </Link>
 
                 {/* Desktop Nav */}
-                <nav className="nav hidden md:block">
+                <nav className="nav hidden lg:block" aria-label="Navegação principal">
                     <ul className="nav-list flex gap-8 items-center h-full">
                         <li><Link href="/#inicio" className="nav-link">Início</Link></li>
 
@@ -85,19 +111,20 @@ export default function Header() {
 
                 {/* Mobile Menu Button */}
                 <button
-                    className="md:hidden text-2xl text-white focus:outline-none"
+                    className="lg:hidden text-2xl text-white mobile-menu-toggle"
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                    aria-label="Toggle menu"
+                    aria-label={mobileMenuOpen ? 'Fechar menu' : 'Abrir menu'}
+                    aria-expanded={mobileMenuOpen}
+                    aria-controls="mobile-navigation"
                 >
                     <i className={`fa-solid ${mobileMenuOpen ? 'fa-xmark' : 'fa-bars'}`}></i>
                 </button>
 
+            </div>
+        </header>
+
                 {/* Mobile Menu Overlay */}
-                <div className={`
-                    fixed inset-0 bg-black/95 backdrop-blur-lg z-50 flex flex-col items-center justify-center gap-8
-                    transition-all duration-300 ease-in-out md:hidden
-                    ${mobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}
-                `} style={{ top: '80px' }}>
+                {mobileMenuOpen && <nav id="mobile-navigation" aria-label="Navegação mobile" className="mobile-nav lg:hidden">
                     <ul className="flex flex-col items-center gap-6 text-xl w-full max-w-md px-6">
                         <li><Link href="/#inicio" className="nav-link" onClick={closeMenu}>Início</Link></li>
 
@@ -106,14 +133,16 @@ export default function Header() {
                             <button
                                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
                                 className="nav-link flex items-center justify-center gap-2 mx-auto"
+                                aria-expanded={servicesDropdownOpen}
+                                aria-controls="mobile-services"
                             >
                                 Serviços <i className={`fa-solid fa-chevron-down text-sm transition-transform duration-300 ${servicesDropdownOpen ? 'rotate-180' : ''}`}></i>
                             </button>
 
-                            <div className={`
+                            <div id="mobile-services" className={`
                                 overflow-hidden transition-all duration-300 ease-in-out
                                 ${servicesDropdownOpen ? 'max-h-[500px] opacity-100 mt-4' : 'max-h-0 opacity-0'}
-                            `}>
+                            `} inert={!servicesDropdownOpen}>
                                 <ul className="flex flex-col gap-4 bg-white/5 rounded-xl p-4 text-base">
                                     {servicesData.map((service) => (
                                         <li key={service.id}>
@@ -134,8 +163,7 @@ export default function Header() {
                         <li><Link href="/#sobre" className="nav-link" onClick={closeMenu}>Sobre</Link></li>
                         <li><Link href="/#contato" className="nav-link btn-cta" onClick={closeMenu}>Fale Conosco</Link></li>
                     </ul>
-                </div>
-            </div>
-        </header>
+                </nav>}
+        </>
     );
 }

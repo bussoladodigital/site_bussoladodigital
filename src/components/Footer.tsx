@@ -29,7 +29,7 @@ export default function Footer() {
                                 <i className="fa-brands fa-instagram text-lg"></i>
                             </a>
                             <a
-                                href="https://wa.me/5511970718438"
+                                href="https://wa.me/5511925895956"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-[var(--primary-accent)] hover:scale-110 transition-all"
@@ -58,7 +58,7 @@ export default function Footer() {
                             <li><Link href="/servicos/performance-ads" className="text-gray-400 hover:text-[var(--primary-accent)] transition-colors">Performance & Ads</Link></li>
                             <li><Link href="/servicos/branding-design" className="text-gray-400 hover:text-[var(--primary-accent)] transition-colors">Branding & Design</Link></li>
                             <li><Link href="/servicos/social-media" className="text-gray-400 hover:text-[var(--primary-accent)] transition-colors">Social Media</Link></li>
-                            <li><Link href="/servicos/web-development" className="text-gray-400 hover:text-[var(--primary-accent)] transition-colors">Web Development</Link></li>
+                            <li><Link href="/servicos/web-development" className="text-gray-400 hover:text-[var(--primary-accent)] transition-colors">Sites & Sistemas Sob Medida</Link></li>
                             <li><Link href="/servicos/midia-impressa" className="text-gray-400 hover:text-[var(--primary-accent)] transition-colors">Mídia Impressa</Link></li>
                             <li><Link href="/servicos/business-analytics" className="text-gray-400 hover:text-[var(--primary-accent)] transition-colors">Business Analytics</Link></li>
                         </ul>
@@ -76,8 +76,8 @@ export default function Footer() {
                             </li>
                             <li className="flex items-start gap-3">
                                 <i className="fa-brands fa-whatsapp text-[var(--primary-accent)] mt-1"></i>
-                                <a href="https://wa.me/5511970718438" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-                                    11 97071-8438
+                                <a href="https://wa.me/5511925895956" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                                    11 92589-5956
                                 </a>
                             </li>
                             <li className="flex items-start gap-3">

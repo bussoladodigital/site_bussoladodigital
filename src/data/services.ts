@@ -129,13 +129,16 @@ export const servicesData: ServiceData[] = [
     {
         id: 'web-development',
         slug: 'web-development',
-        title: "Web Development",
-        shortDescription: "Experiências digitais rápidas e intuitivas que vendem por você.",
-        fullDescription: "Seu site é seu vendedor 24h. Se ele é lento, feio ou confuso, você está perdendo dinheiro. Desenvolvemos sites de alta performance, Landing Pages focadas em conversão e sistemas web robustos. Utilizamos as tecnologias mais modernas (Next.js, React) para garantir velocidade instantânea e SEO técnico impecável.",
+        title: "Sites & Sistemas Sob Medida",
+        shortDescription: "Sites, aplicativos e sistemas personalizados para o seu negócio.",
+        fullDescription: "Cada negócio tem desafios próprios. Desenvolvemos sites, aplicativos e sistemas sob medida para transformar suas ideias em soluções práticas. De uma landing page a um portal de clientes, dashboard ou sistema de gestão, criamos experiências alinhadas aos seus processos, com integrações que conectam suas ferramentas e ajudam sua empresa a crescer.",
         icon: "fa-code",
         image: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=2064&auto=format&fit=crop",
         keywords: [
             "Criação de Sites Profissionais",
+            "Desenvolvimento de Sistemas Sob Medida",
+            "Aplicativos Personalizados",
+            "Automação de Processos",
             "Desenvolvimento Web",
             "Landing Page de Alta Conversão",
             "Criação de E-commerce",
@@ -144,23 +147,23 @@ export const servicesData: ServiceData[] = [
             "Otimização de Sites (SEO)"
         ],
         features: [
-            "Sites Institucionais Responsivos",
-            "Landing Pages de Alta Conversão",
-            "E-commerces Personalizados",
-            "Otimização de SEO Técnico",
-            "Integração com CRMs e APIs"
+            "Sites, Landing Pages e E-commerces",
+            "Sistemas de Gestão e Portais Sob Medida",
+            "Aplicativos e Dashboards Personalizados",
+            "Automação dos Processos do seu Negócio",
+            "Integração com CRMs, APIs e Ferramentas Existentes"
         ],
         benefits: [
-            "Velocidade de carregamento superior",
-            "Melhor posicionamento no Google",
-            "Experiência do usuário (UX) fluida",
-            "Segurança e estabilidade total"
+            "Soluções alinhadas à sua operação",
+            "Menos tarefas manuais e maior produtividade",
+            "Experiência intuitiva em computadores e celulares",
+            "Estrutura preparada para evoluir com seu negócio"
         ],
         process: [
-            { title: "Wireframe", desc: "Estrutura e fluxo de navegação." },
-            { title: "UI Design", desc: "Layout visual fiel à marca." },
-            { title: "Code", desc: "Desenvolvimento front-end e back-end." },
-            { title: "Launch", desc: "Testes, otimização e publicação." }
+            { title: "Descoberta", desc: "Entendemos seus objetivos, processos e necessidades." },
+            { title: "Planejamento", desc: "Definimos funcionalidades, integrações e a experiência de uso." },
+            { title: "Desenvolvimento", desc: "Construímos a solução com entregas e validações ao longo do projeto." },
+            { title: "Entrega", desc: "Testes, implantação e orientação para usar a solução." }
         ]
     },
     {

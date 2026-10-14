@@ -5,9 +5,9 @@ export default function Hero() {
     return (
         <section id="inicio" className="hero">
             <div className="hero-bg"></div>
-            <div className="container hero-content grid grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-0">
+            <div className="container hero-content grid grid-cols-1 lg:grid-cols-2 items-center gap-4 lg:gap-0">
                 {/* Left Side: 50% */}
-                <div className="hero-text-content w-full max-w-[90%] md:max-w-none pr-0 md:pr-8 z-20">
+                <div className="hero-text-content w-full min-w-0 pr-0 lg:pr-8 z-20">
                     <RevealOnScroll>
                         <h1 className="hero-title">
                             Guiando sua marca para o <span className="text-highlight">Futuro</span>
@@ -16,7 +16,7 @@ export default function Hero() {
 
                     <RevealOnScroll delay={1}>
                         <p className="hero-subtitle">
-                            Marketing estratégico que une dados, criatividade e tecnologia.
+                            Marketing estratégico, sites, aplicativos e sistemas sob medida para impulsionar seu negócio.
                         </p>
                     </RevealOnScroll>
 
@@ -31,7 +31,7 @@ export default function Hero() {
                 </div>
 
                 {/* Right Side: 50% */}
-                <div className="hero-carousel w-full flex justify-center items-center relative z-10 mt-12 md:mt-0 pl-0 md:pl-8 h-[500px]">
+                <div className="hero-carousel w-full flex justify-center items-center relative z-10 mt-8 lg:mt-0 pl-0 lg:pl-8 h-[400px] md:h-[500px]">
                     <RevealOnScroll delay={3} className="w-full h-full flex items-center justify-center">
                         <HeroCarousel />
                     </RevealOnScroll>
